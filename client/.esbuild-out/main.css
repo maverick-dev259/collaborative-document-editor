@@ -1,0 +1,116 @@
+/* src/index.css */
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ProseMirror {
+  outline: none;
+  min-height: 100%;
+  padding: 2rem 3rem;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+.ProseMirror ul,
+.ProseMirror ol {
+  padding: 0 1rem;
+}
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+  line-height: 1.1;
+  margin-top: 1.5rem;
+}
+.ProseMirror code {
+  background-color: rgba(#616161, 0.1);
+  color: #616161;
+}
+.ProseMirror pre {
+  background: #0D0D0D;
+  color: #FFF;
+  font-family: "JetBrainsMono", monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.ProseMirror pre code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+.ProseMirror blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(13, 13, 13, 0.1);
+}
+.dashboard-layout {
+  display: flex;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+.editor-layout {
+  display: flex;
+  height: calc(100vh - 56px);
+  background: #f8f9fa;
+  overflow: hidden;
+}
+.editor-content-area {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.editor-page {
+  width: 816px;
+  max-width: 100%;
+  min-height: 1056px;
+  background: white;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #dee2e6;
+}
+.doc-card {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+}
+.doc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.presence-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+.presence-avatar:first-child {
+  margin-left: 0;
+}
+/*# sourceMappingURL=/main.css.map */

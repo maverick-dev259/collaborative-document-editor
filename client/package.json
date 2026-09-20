@@ -1,0 +1,38 @@
+{
+  "name": "collab-editor-client",
+  "private": true,
+  "version": "1.0.0",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel --port 5173",
+    "build": "parcel build",
+    "preview": "parcel build && npx serve dist"
+  },
+  "dependencies": {
+    "@tiptap/extension-collaboration": "^2.6.6",
+    "@tiptap/extension-collaboration-cursor": "^2.6.6",
+    "@tiptap/extension-color": "^2.6.6",
+    "@tiptap/extension-highlight": "^2.6.6",
+    "@tiptap/extension-link": "^2.6.6",
+    "@tiptap/extension-placeholder": "^2.6.6",
+    "@tiptap/extension-text-align": "^2.6.6",
+    "@tiptap/extension-text-style": "^2.6.6",
+    "@tiptap/extension-underline": "^2.6.6",
+    "@tiptap/pm": "^2.6.6",
+    "@tiptap/react": "^2.6.6",
+    "@tiptap/starter-kit": "^2.6.6",
+    "axios": "^1.7.7",
+    "lucide-react": "^0.441.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "socket.io-client": "^4.7.5",
+    "yjs": "^13.6.32"
+  },
+  "devDependencies": {
+    "@parcel/transformer-css": "^2.12.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
